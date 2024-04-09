@@ -16,9 +16,7 @@ namespace pdcpp
     class Timer
     {
     public:
-     virtual ~Timer() = default;
-
-     /**
+        /**
          * Creates a timer which will measure, to the best of it's ability, a
          * time interval, after which its callback will be triggered. There
          * may be variance due to system load, the callback is guaranteed not to
@@ -75,9 +73,7 @@ namespace pdcpp
     class FrameTimer
     {
     public:
-     virtual ~FrameTimer() = default;
-
-     /**
+        /**
          * Similar to a `Timer`, but operates on a fixed count of ticks, as
          * opposed to relying on the system time. This is ideal for triggering
          * events on fixed frame counts, or reducing the effective refresh rate

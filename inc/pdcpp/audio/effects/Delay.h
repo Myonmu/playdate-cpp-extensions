@@ -44,7 +44,7 @@ namespace pdcpp
             Tap& operator=(Tap&& other);
 
             // Destructor. Removes and frees the tap.
-            ~Tap() override;
+            ~Tap();
 
             /**
              * If the delay line is stereo and flip is set, the tap outputs the

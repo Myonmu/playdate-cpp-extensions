@@ -34,7 +34,7 @@ namespace pdcpp
         SamplePlayer& operator=(SamplePlayer&& other);
 
         // Destructor. Frees the internal sample player
-        ~SamplePlayer() override;
+        ~SamplePlayer();
 
         /**
          * Sets the current sample to play. Will any previously set sample.

@@ -39,8 +39,6 @@ namespace pdcpp
         class Listener
         {
         public:
-            virtual ~Listener() = default;
-
             /**
              * Pure virtual. Will be called if any of the current, pressed, or
              * released button states are active during a given update cycle.

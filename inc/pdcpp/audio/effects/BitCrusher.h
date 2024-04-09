@@ -32,7 +32,7 @@ namespace pdcpp
         BitCrushAndUndersample& operator=(BitCrushAndUndersample&& other);
 
         // Destructor
-        ~BitCrushAndUndersample() override;
+        ~BitCrushAndUndersample();
 
         /**
          * Sets the amount of bit-crushing

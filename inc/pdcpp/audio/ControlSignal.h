@@ -81,7 +81,7 @@ namespace pdcpp
         /**
          * Frees the internal pointer.
          */
-        ~ControlSignal() override;
+        ~ControlSignal();
 
         // Move constructor
         ControlSignal(ControlSignal&& other) noexcept;
