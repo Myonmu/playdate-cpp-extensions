@@ -24,6 +24,8 @@ namespace pdcpp
     class SoundEffect
     {
     public:
+        virtual ~SoundEffect() = default;
+
         /**
          * Sets a modulator which will alter the wet/dry mix of this SoundEffect
          *
@@ -64,7 +66,7 @@ namespace pdcpp
         CustomSoundEffect& operator=(CustomSoundEffect&& other) noexcept ;
 
         // Destructor
-        ~CustomSoundEffect();
+        ~CustomSoundEffect() override;
 
         /**
          * Implement this function and create an effect by modifying the samples
