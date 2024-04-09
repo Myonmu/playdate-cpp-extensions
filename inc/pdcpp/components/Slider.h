@@ -24,7 +24,9 @@ namespace pdcpp
         class Listener
         {
         public:
-            // Called with a pointer to the slider that changed
+         virtual ~Listener() = default;
+
+         // Called with a pointer to the slider that changed
             virtual void sliderValueChanged(Slider* sliderThatChanged) = 0;
         };
 
@@ -48,7 +50,7 @@ namespace pdcpp
          */
         Slider(float min, float max, float startingValue, int nSteps=20, SliderStyle style=Horizontal);
 
-        ~Slider();
+        ~Slider() override;
 
         /**
          * Sets the value of the slider

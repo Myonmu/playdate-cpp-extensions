@@ -23,7 +23,9 @@ namespace pdcpp
     class Signal
     {
     public:
-        /**
+     virtual ~Signal() = default;
+
+     /**
          * @returns the current value of the Signal
          */
         [[ nodiscard ]] float getValue() const;
@@ -88,7 +90,7 @@ namespace pdcpp
         CustomSignal();
 
          // Destructor. Cleans up the custom signal.
-        virtual ~CustomSignal();
+        ~CustomSignal() override;
 
         /**
          * Will be called per-frame on the audio thread to provide a new value.

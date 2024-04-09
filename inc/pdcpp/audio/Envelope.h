@@ -23,7 +23,7 @@ namespace pdcpp
 
         explicit Envelope(float a=0.0f, float d=0.1f, float s=0.5f, float r=0.2f);
 
-        ~Envelope();
+        ~Envelope() override;
 
         void setAttack(float attack);
         void setDecay(float decay);

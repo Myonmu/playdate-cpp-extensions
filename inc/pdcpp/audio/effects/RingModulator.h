@@ -31,7 +31,7 @@ namespace pdcpp
         RingModulator& operator=(RingModulator&& other);
 
         // Destructor
-        ~RingModulator();
+        ~RingModulator() override;
 
         /**
          * Sets the frequency of the ring modulation signal

@@ -20,7 +20,9 @@ namespace pdcpp
     class Component
     {
     public:
-        /**
+     virtual ~Component() = default;
+
+     /**
          * Components are simple UI elements that are not Sprites. They dictate
          * how to draw an element, but not when. The key difference is that
          * Components can have a hierarchy of children where Sprites cannot: the

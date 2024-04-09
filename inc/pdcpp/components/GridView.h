@@ -26,7 +26,7 @@ namespace pdcpp
         GridView();
 
         // Default virtual destructor
-        virtual ~GridView() = default;
+        ~GridView() override = default;
 
         /**
          * Call this when the actual Components within cells have changed.

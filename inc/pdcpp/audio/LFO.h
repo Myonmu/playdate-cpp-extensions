@@ -35,7 +35,7 @@ namespace pdcpp
         LFO& operator=(LFO&& other) noexcept;
 
         // Destructor. frees the owned pointer.
-        virtual ~LFO();
+        ~LFO() override;
 
         /**
          * Set the rate of the LFO in Hertz.
