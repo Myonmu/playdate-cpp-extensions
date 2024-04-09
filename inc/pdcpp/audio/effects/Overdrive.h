@@ -32,7 +32,7 @@ namespace pdcpp
         Overdrive& operator=(Overdrive&& other);
 
         // Destructor
-        ~Overdrive();
+        ~Overdrive() override;
 
         /**
          * Sets the gain applied to the incoming signal before clipping

@@ -28,7 +28,7 @@ namespace pdcpp
         InputContext();
 
         // Default virtual destructor
-        virtual ~InputContext() = default;
+        ~InputContext() override;
 
         /**
          * Tells the context manager to leave this context. Note that this only

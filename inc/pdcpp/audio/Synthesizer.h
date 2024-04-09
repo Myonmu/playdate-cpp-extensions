@@ -36,7 +36,7 @@ namespace pdcpp
         Synthesizer& operator=(Synthesizer&& other);
 
         // Destructor. Frees internal C API pointer.
-        ~Synthesizer();
+        ~Synthesizer() override;
 
         /**
          * Adds a new voice to this Synthesizer. When a note-on arrives, the
