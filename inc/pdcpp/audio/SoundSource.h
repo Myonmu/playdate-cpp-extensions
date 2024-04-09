@@ -22,7 +22,9 @@ namespace pdcpp
     class SoundSource
     {
     public:
-        /**
+     virtual ~SoundSource() = default;
+
+     /**
          * Set the volume, panned, of this source
          * @param lvol the left volume to set 0.0f to 1.0f
          * @param rvol the right volume to set 0.0f to 1.0f
