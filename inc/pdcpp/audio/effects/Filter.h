@@ -30,7 +30,7 @@ namespace pdcpp
         explicit OnePoleFilter(float cutoff=0.0f);
 
         // Destructor
-        ~OnePoleFilter() override;
+        ~OnePoleFilter();
 
         /**
          * changes the cutoff frequency of the filter.
@@ -89,7 +89,7 @@ namespace pdcpp
         TwoPoleFilter& operator=(TwoPoleFilter&& other);
 
         // Destructor
-        ~TwoPoleFilter() override;
+        ~TwoPoleFilter();
 
         /**
          * Sets a new type for this filter

@@ -111,7 +111,7 @@ namespace pdcpp
     public:
         explicit SynthesizerVoiceContainer(PDSynth* synth);
 
-        ~SynthesizerVoiceContainer() override = default;
+        virtual ~SynthesizerVoiceContainer() = default;
 
         /**
          * Sets the waveform to be used by this voice

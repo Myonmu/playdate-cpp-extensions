@@ -100,7 +100,7 @@ namespace pdcpp
         Delay& operator=(Delay&& other);
 
         // Destructor
-        ~Delay() override;
+        ~Delay();
 
         /**
          * Changes the length of the delay line, clearing its contents.
